@@ -33,9 +33,26 @@
     font-size: 1.2em;
     font-weight: 300;
     height: 50px;
+    position: relative;
     transition: background-color 0.4s ease-in-out;
     vertical-align: middle;
     width: 25%;
+}
+
+.calculator-column > input[type=radio] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    bottom: 0;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
 }
 
 .non-number-column {
@@ -44,7 +61,8 @@
     font-weight: bold;
 }
 
-.calculator-column:hover {
+.calculator-column:hover,
+.calculator-column > input[type=radio]:checked {
     background-color: #EBF4FA;
 }
 
