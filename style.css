@@ -66,6 +66,10 @@
     background-color: #EBF4FA;
 }
 
+.calculator-column:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;
+}
+
 .calculator-input {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
